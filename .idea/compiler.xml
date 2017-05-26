@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="managment-system-for-masters-thesis" target="1.6" />
+      <module name="managment-system-for-masters-thesis" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
