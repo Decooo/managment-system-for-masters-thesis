@@ -13,5 +13,7 @@ public interface WiadomosciDAO {
 
     List<Wiadomosci> showallsent(int id);
 
+    void add(int idNadawcy, int idAdresata, String temat, String tresc);
+    
     void deleteMessage(int idwiadomosci);
 }

@@ -31,7 +31,7 @@
         <list:forEach var="message" items="${messages}" varStatus="loop">
             <tr>
                 <td><list:forEach begin="${loop.index}" step="1" end="${loop.index}" var="user"
-                                  items="${users}">${user.imie} ${user.nazwisko}</list:forEach></td>
+                                  items="${users}">${user.imie} ${user.nazwisko} (${user.login})</list:forEach></td>
                 <td>${message.temat}</td>
                 <td>${message.tresc}</td>
                 <td><input type="submit" value="Usuń wiadomość" onclick="location.href='delete/${message.idwiadomosci}';"/></td>

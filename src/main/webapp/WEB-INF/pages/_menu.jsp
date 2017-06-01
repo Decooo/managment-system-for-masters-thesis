@@ -12,6 +12,9 @@
 <div class="menu">
     <a href="${pageContext.request.contextPath}/">Strona główna</a>
     <security:authorize access="hasAnyRole('ROLE_administrator','ROLE_student','ROLE_promotor')">
+        <a href="${pageContext.request.contextPath}/wiadomosci/messages">Nowa wiadomość</a>
+    </security:authorize>
+    <security:authorize access="hasAnyRole('ROLE_administrator','ROLE_student','ROLE_promotor')">
         <a href="${pageContext.request.contextPath}/wiadomosci/list">Wiadomosci</a>
     </security:authorize>
 

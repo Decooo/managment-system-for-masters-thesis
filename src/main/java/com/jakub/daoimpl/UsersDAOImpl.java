@@ -2,7 +2,6 @@ package com.jakub.daoimpl;
 
 import com.jakub.dao.UsersDAO;
 import com.jakub.model.Users;
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -21,10 +20,14 @@ public class UsersDAOImpl implements UsersDAO {
     @Override
     public Users findUser(String login) {
         EntityManager entityManager = emf.createEntityManager();
-        Users user = (Users) entityManager.createNativeQuery("SELECT * FROM users WHERE login='" + login + "'", Users.class).getSingleResult();
-
-        entityManager.close();
-        return user;
+        try {
+            Users user = (Users) entityManager.createNativeQuery("SELECT * FROM users WHERE login='" + login + "'", Users.class).getSingleResult();
+            entityManager.close();
+            return user;
+        } catch (Exception e) {
+            entityManager.close();
+            return null;
+        }
 
     }
 

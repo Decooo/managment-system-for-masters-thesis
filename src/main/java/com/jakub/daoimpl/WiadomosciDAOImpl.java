@@ -36,6 +36,24 @@ public class WiadomosciDAOImpl implements WiadomosciDAO {
     }
 
     @Override
+    public void add(int idNadawcy, int idAdresata, String temat, String tresc) {
+        EntityManager entityManager = emf.createEntityManager();
+
+        StoredProcedureQuery query = entityManager.createStoredProcedureQuery("addMessage", Wiadomosci.class)
+                .registerStoredProcedureParameter(1, Integer.class, ParameterMode.IN)
+                .registerStoredProcedureParameter(2, Integer.class, ParameterMode.IN)
+                .registerStoredProcedureParameter(3, String.class, ParameterMode.IN)
+                .registerStoredProcedureParameter(4, String.class, ParameterMode.IN)
+                .setParameter(1, idNadawcy)
+                .setParameter(2, idAdresata)
+                .setParameter(3, temat)
+                .setParameter(4, tresc);
+        query.execute();
+
+        entityManager.close();
+    }
+
+    @Override
     public void deleteMessage(int idwiadomosci) {
         EntityManager entityManager = emf.createEntityManager();
         StoredProcedureQuery query = entityManager.createStoredProcedureQuery("deleteMessage", Wiadomosci.class)
