@@ -100,7 +100,7 @@ public class WiadomosciController {
         return model;
     }
 
-    //metoda odpowiadająca za wyświetlanie strony rejestracji
+    //metoda odpowiadająca za wyświetlanie strony wysyłania nowej wiadomości
     @RequestMapping(value = {"/messages"}, method = RequestMethod.GET)
     public ModelAndView messages(ModelMap messages) {
         ModelAndView model = new ModelAndView("newMessage");

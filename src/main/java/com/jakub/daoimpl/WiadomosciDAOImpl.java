@@ -3,6 +3,8 @@ package com.jakub.daoimpl;
 import com.jakub.dao.WiadomosciDAO;
 import com.jakub.model.Users;
 import com.jakub.model.Wiadomosci;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.*;
 import java.util.List;
@@ -22,7 +24,6 @@ public class WiadomosciDAOImpl implements WiadomosciDAO {
 
         entityManager.close();
         return messages;
-
     }
 
     @Override
@@ -32,7 +33,6 @@ public class WiadomosciDAOImpl implements WiadomosciDAO {
 
         entityManager.close();
         return messages;
-
     }
 
     @Override

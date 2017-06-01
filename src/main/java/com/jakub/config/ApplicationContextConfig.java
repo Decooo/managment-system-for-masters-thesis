@@ -1,7 +1,9 @@
 package com.jakub.config;
 
+import com.jakub.dao.TematyDAO;
 import com.jakub.dao.UsersDAO;
 import com.jakub.dao.WiadomosciDAO;
+import com.jakub.daoimpl.TematyDAOImpl;
 import com.jakub.daoimpl.UsersDAOImpl;
 import com.jakub.daoimpl.WiadomosciDAOImpl;
 import com.mchange.v2.c3p0.DriverManagerDataSource;
@@ -110,6 +112,11 @@ public class ApplicationContextConfig {
     @Bean(name = "wiadomosciDAO")
     public WiadomosciDAO getWiadomosciDAO() {
         return new WiadomosciDAOImpl();
+    }
+
+    @Bean(name = "tematyDAO")
+    public TematyDAO getTematyDAO() {
+        return new TematyDAOImpl();
     }
 
 }
