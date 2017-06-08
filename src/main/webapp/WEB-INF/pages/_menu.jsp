@@ -23,6 +23,9 @@
     <security:authorize access="hasAnyRole('ROLE_administrator','ROLE_student')">
         <a href="${pageContext.request.contextPath}/tematy/listawolnych">Wolne tematy</a>
     </security:authorize>
+    <security:authorize access="hasAnyRole('ROLE_administrator','ROLE_promotor')">
+        <a href="${pageContext.request.contextPath}/tematy/mojetematy">Moje tematy</a>
+    </security:authorize>
     <a href="${pageContext.request.contextPath}/tematy/lista">Tematy</a>
     <security:authorize access="hasAnyRole('ROLE_administrator','ROLE_promotor')">
         <a href="${pageContext.request.contextPath}/tematy/rezerwacje">Rezerwacje</a>

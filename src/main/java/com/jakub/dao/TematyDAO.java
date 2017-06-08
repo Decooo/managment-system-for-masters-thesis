@@ -10,6 +10,8 @@ import java.util.Observable;
  */
 public interface TematyDAO {
 
+    void delete(int idtematy);
+
     void reserveTopic(int idTematy, int idUser);
 
     List<Tematy> showall();
@@ -23,7 +25,10 @@ public interface TematyDAO {
     List<Tematy> showallReservation();
 
     void acceptReservation(int idTematu, int idUser);
+
     void rejectReservation(int idTematu);
 
     Tematy findByID(int idTematu);
+
+    List<Tematy> showallMyTopics(int idUser);
 }

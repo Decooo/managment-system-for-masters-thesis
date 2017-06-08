@@ -16,6 +16,17 @@ public class TematyDAOImpl implements TematyDAO {
 
 
     @Override
+    public void delete(int idtematy) {
+        EntityManager entityManager = emf.createEntityManager();
+        StoredProcedureQuery query = entityManager.createStoredProcedureQuery("deleteTopic", Tematy.class)
+                .registerStoredProcedureParameter(1, Integer.class, ParameterMode.IN)
+                .setParameter(1, idtematy);
+        query.execute();
+
+        entityManager.close();
+    }
+
+    @Override
     public void reserveTopic(int idTematy, int idUser) {
         EntityManager entityManager = emf.createEntityManager();
 
@@ -115,5 +126,14 @@ public class TematyDAOImpl implements TematyDAO {
 
         entityManager.close();
         return temat;
+    }
+
+    @Override
+    public List<Tematy> showallMyTopics(int idUser) {
+        EntityManager entityManager = emf.createEntityManager();
+        List<Tematy> topic = (List<Tematy>) entityManager.createNativeQuery("SELECT * FROM tematy WHERE idpromotora='" + idUser + "'", Tematy.class).getResultList();
+
+        entityManager.close();
+        return topic;
     }
 }

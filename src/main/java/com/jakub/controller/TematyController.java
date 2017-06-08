@@ -69,6 +69,15 @@ public class TematyController {
         return model;
     }
 
+    @RequestMapping("/mojetematy")
+    public ModelAndView mylist(Principal principal) {
+        ModelAndView model = new ModelAndView("listMyTopics");
+        Users user = usersDAO.findUser(principal.getName());
+        List<Tematy> topics = tematyDAO.showallMyTopics(user.getIduser());
+        model.addObject("topics", topics);
+        return model;
+    }
+
     @RequestMapping("/listawolnych")
     public ModelAndView freelist() {
         ModelAndView model = new ModelAndView("listFreeThemes");
@@ -179,6 +188,15 @@ public class TematyController {
             Users user1 = usersDAO.findUserByID(topic.getIdpromotora());
             model.addObject("users",user1);
         }
+        return model;
+    }
+
+    @RequestMapping(value = "/delete/{idtematy}", method = RequestMethod.GET)
+    public ModelAndView delete(@PathVariable("idtematy") int idtematy, RedirectAttributes attributes) {
+        ModelAndView model = new ModelAndView("redirect:/tematy/mojetematy");
+        tematyDAO.delete(idtematy);
+        attributes.addFlashAttribute("css","msgSuccess");
+        attributes.addFlashAttribute("msg", "Usunieto temat pracy dyplomowej");
         return model;
     }
 
