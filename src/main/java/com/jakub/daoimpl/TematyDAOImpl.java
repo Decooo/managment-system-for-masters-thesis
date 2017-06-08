@@ -16,9 +16,22 @@ public class TematyDAOImpl implements TematyDAO {
 
 
     @Override
+    public void reserveTopic(int idTematy, int idUser) {
+        EntityManager entityManager = emf.createEntityManager();
+
+        StoredProcedureQuery query = entityManager.createStoredProcedureQuery("reserveTopic", Tematy.class)
+                .registerStoredProcedureParameter(1, Integer.class, ParameterMode.IN)
+                .registerStoredProcedureParameter(2, Integer.class, ParameterMode.IN)
+                .setParameter(1, idTematy)
+                .setParameter(2, idUser);
+        query.execute();
+        entityManager.close();
+    }
+
+    @Override
     public List<Tematy> showall() {
         EntityManager entityManager = emf.createEntityManager();
-        List<Tematy> topic= (List<Tematy>) entityManager.createNativeQuery("SELECT * FROM tematy", Tematy.class).getResultList();
+        List<Tematy> topic = (List<Tematy>) entityManager.createNativeQuery("SELECT * FROM tematy", Tematy.class).getResultList();
 
         entityManager.close();
         return topic;
@@ -33,6 +46,63 @@ public class TematyDAOImpl implements TematyDAO {
                 .registerStoredProcedureParameter(2, String.class, ParameterMode.IN)
                 .setParameter(1, idPromotora)
                 .setParameter(2, temat);
+        query.execute();
+
+        entityManager.close();
+    }
+
+    @Override
+    public List<Tematy> showFreeTopics() {
+        EntityManager entityManager = emf.createEntityManager();
+        List<Tematy> topic = (List<Tematy>) entityManager.createNativeQuery("SELECT * FROM tematy WHERE status='wolny'", Tematy.class).getResultList();
+
+        entityManager.close();
+        return topic;
+    }
+
+    @Override
+    public Boolean itIsAlreadyBooked(int idUser) {
+        EntityManager entityManager = emf.createEntityManager();
+        List<Tematy> reserved = (List<Tematy>) entityManager.createNativeQuery("SELECT * FROM tematy WHERE iduser='" + idUser + "'", Tematy.class).getResultList();
+
+        Boolean itIsAlreadyBooked;
+        if (reserved.isEmpty() == true) {
+            itIsAlreadyBooked = false;
+        } else itIsAlreadyBooked = true;
+        entityManager.close();
+        return itIsAlreadyBooked;
+    }
+
+    @Override
+    public List<Tematy> showallReservation() {
+        EntityManager entityManager = emf.createEntityManager();
+        List<Tematy> topic = (List<Tematy>) entityManager.createNativeQuery("SELECT * FROM tematy WHERE status='zarezerwowany'", Tematy.class).getResultList();
+
+        entityManager.close();
+        return topic;
+
+    }
+
+    @Override
+    public void acceptReservation(int idTematu, int idUser) {
+        EntityManager entityManager = emf.createEntityManager();
+        StoredProcedureQuery query = entityManager.createStoredProcedureQuery("acceptReservation", Tematy.class)
+                .registerStoredProcedureParameter(1, Integer.class, ParameterMode.IN)
+                .registerStoredProcedureParameter(2, Integer.class, ParameterMode.IN)
+                .setParameter(1, idTematu)
+                .setParameter(2, idUser);
+        query.execute();
+
+        entityManager.close();
+    }
+
+    @Override
+    public void rejectReservation(int idTematu) {
+        EntityManager entityManager = emf.createEntityManager();
+        StoredProcedureQuery query = entityManager.createStoredProcedureQuery("rejectReservation", Tematy.class)
+                .registerStoredProcedureParameter(1, Integer.class, ParameterMode.IN)
+                .setParameter(1, idTematu);
+
         query.execute();
 
         entityManager.close();

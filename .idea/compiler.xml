@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="managment-system-for-masters-thesis" />
+        <module name="ManagmentSystem" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="managment-system-for-masters-thesis" target="1.6" />
+      <module name="ManagmentSystem" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

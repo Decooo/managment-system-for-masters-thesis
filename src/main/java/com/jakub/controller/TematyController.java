@@ -1,5 +1,6 @@
 package com.jakub.controller;
 
+import com.jakub.dao.PraceDyplomoweDAO;
 import com.jakub.dao.TematyDAO;
 import com.jakub.dao.UsersDAO;
 import com.jakub.model.Tematy;
@@ -12,11 +13,9 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.InitBinder;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
@@ -38,6 +37,9 @@ public class TematyController {
     TematyDAO tematyDAO;
 
     @Autowired
+    PraceDyplomoweDAO praceDyplomoweDAO;
+
+    @Autowired
     TematyValidator tematyValidator;
 
     @InitBinder
@@ -55,7 +57,7 @@ public class TematyController {
     @RequestMapping("/lista")
     public ModelAndView list() {
         ModelAndView model = new ModelAndView("topicList");
-        List<Tematy> topics= tematyDAO.showall();
+        List<Tematy> topics = tematyDAO.showall();
         model.addObject("topics", topics);
         List<Users> users = new ArrayList<Users>();
 
@@ -66,6 +68,19 @@ public class TematyController {
         return model;
     }
 
+    @RequestMapping("/listawolnych")
+    public ModelAndView freelist() {
+        ModelAndView model = new ModelAndView("listFreeThemes");
+        List<Tematy> topics = tematyDAO.showFreeTopics();
+        model.addObject("topics", topics);
+        List<Users> users = new ArrayList<Users>();
+
+        for (Tematy t : topics) {
+            users.add(usersDAO.findUserByID(t.getIdpromotora()));
+        }
+        model.addObject("users", users);
+        return model;
+    }
 
     @RequestMapping(value = "/nowy", method = RequestMethod.GET)
     public ModelAndView add() {
@@ -90,6 +105,60 @@ public class TematyController {
         model.addObject("css", "msgSuccess");
         model.addObject("msg", "Dodoano nowy temat!");
         tematy.setTemat("");
+        return model;
+    }
+
+    @RequestMapping(value = "/reserve/{idtematy}", method = RequestMethod.GET)
+    public ModelAndView reserve(HttpServletRequest request, @PathVariable("idtematy") int idTematy, Principal principal, RedirectAttributes attributes) {
+        ModelAndView model = new ModelAndView("redirect:/tematy/listawolnych");
+        Users user = usersDAO.findUser(principal.getName());
+        if (tematyDAO.itIsAlreadyBooked(user.getIduser())) {
+            attributes.addFlashAttribute("css", "error");
+            attributes.addFlashAttribute("msg", "Nie mozesz zarezerwowac więcej tematow");
+            return model;
+        }
+        if (praceDyplomoweDAO.isAlreadyAssigned(user.getIduser())) {
+            attributes.addFlashAttribute("css", "error");
+            attributes.addFlashAttribute("msg", "Temat pracy dyplomowej został już wybrany. Nie mozesz zarezerwowac nastepnego tematu.");
+            return model;
+        }
+
+        attributes.addFlashAttribute("css", "msgSuccess");
+        attributes.addFlashAttribute("msg", "Poprawnie zarezerwowano temat pracy dyplomowej");
+        tematyDAO.reserveTopic(idTematy, user.getIduser());
+        return model;
+    }
+
+    @RequestMapping("/rezerwacje")
+    public ModelAndView reservation() {
+        ModelAndView model = new ModelAndView("reservation");
+        List<Tematy> topics = tematyDAO.showallReservation();
+        model.addObject("topics", topics);
+        List<Users> users = new ArrayList<Users>();
+
+        for (Tematy t : topics) {
+            users.add(usersDAO.findUserByID(t.getIdUser()));
+        }
+        model.addObject("users", users);
+        return model;
+    }
+
+    @RequestMapping(value = "/accept/{idtematy}", method = RequestMethod.GET)
+    public ModelAndView accept(Principal principal, @PathVariable("idtematy") int idtematy, RedirectAttributes attributes) {
+        ModelAndView model = new ModelAndView("redirect:/tematy/rezerwacje");
+        Users user = usersDAO.findUser(principal.getName());
+        tematyDAO.acceptReservation(idtematy, user.getIduser());
+        attributes.addFlashAttribute("css", "msgSuccess");
+        attributes.addFlashAttribute("msg", "Zaakceptowano rezerwacje tematu");
+        return model;
+    }
+
+    @RequestMapping(value = "/reject/{idtematy}", method = RequestMethod.GET)
+    public ModelAndView reject(Principal principal, @PathVariable("idtematy") int idtematy, RedirectAttributes attributes) {
+        ModelAndView model = new ModelAndView("redirect:/tematy/rezerwacje");
+        tematyDAO.rejectReservation(idtematy);
+        attributes.addFlashAttribute("css", "msgSuccess");
+        attributes.addFlashAttribute("msg", "Odrzucono rezerwacje tematu");
         return model;
     }
 

@@ -14,6 +14,7 @@ public class Tematy {
     private  String temat;
     private int idpromotora;
     private String status;
+    private int idUser;
 
     @Override
     public String toString() {
@@ -22,7 +23,16 @@ public class Tematy {
                 ", temat='" + temat + '\'' +
                 ", idpromotora=" + idpromotora +
                 ", status='" + status + '\'' +
+                ", idUser=" + idUser +
                 '}';
+    }
+
+    public int getIdUser() {
+        return idUser;
+    }
+
+    public void setIdUser(int idUser) {
+        this.idUser = idUser;
     }
 
     public int getIdtematy() {

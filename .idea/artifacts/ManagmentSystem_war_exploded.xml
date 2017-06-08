@@ -1,10 +1,10 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="managment-system-for-masters-thesis:war exploded">
+  <artifact type="exploded-war" name="ManagmentSystem:war exploded">
     <output-path>$PROJECT_DIR$/target/ManagmentSystem</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="managment-system-for-masters-thesis" />
+          <element id="module-output" name="ManagmentSystem" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
@@ -53,7 +53,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/ManagmentSystem/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="managment-system-for-masters-thesis/web/Web" />
+      <element id="javaee-facet-resources" facet="ManagmentSystem/web/Web" />
     </root>
   </artifact>
 </component>

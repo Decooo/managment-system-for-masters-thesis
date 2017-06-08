@@ -1,8 +1,8 @@
 <component name="ArtifactManager">
-  <artifact type="war" name="managment-system-for-masters-thesis:war">
+  <artifact type="war" name="ManagmentSystem:war">
     <output-path>$PROJECT_DIR$/target</output-path>
     <root id="archive" name="ManagmentSystem.war">
-      <element id="artifact" artifact-name="managment-system-for-masters-thesis:war exploded" />
+      <element id="artifact" artifact-name="ManagmentSystem:war exploded" />
     </root>
   </artifact>
 </component>

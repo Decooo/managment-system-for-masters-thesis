@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/managment-system-for-masters-thesis.iml" filepath="$PROJECT_DIR$/managment-system-for-masters-thesis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ManagmentSystem.iml" filepath="$PROJECT_DIR$/ManagmentSystem.iml" />
     </modules>
   </component>
 </project>

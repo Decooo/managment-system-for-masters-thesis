@@ -1,8 +1,10 @@
 package com.jakub.config;
 
+import com.jakub.dao.PraceDyplomoweDAO;
 import com.jakub.dao.TematyDAO;
 import com.jakub.dao.UsersDAO;
 import com.jakub.dao.WiadomosciDAO;
+import com.jakub.daoimpl.PraceDyplomoweDAOImpl;
 import com.jakub.daoimpl.TematyDAOImpl;
 import com.jakub.daoimpl.UsersDAOImpl;
 import com.jakub.daoimpl.WiadomosciDAOImpl;
@@ -119,5 +121,10 @@ public class ApplicationContextConfig {
         return new TematyDAOImpl();
     }
 
+
+    @Bean(name = "praceDyplomoweDAO")
+    public PraceDyplomoweDAO getPraceDyplomoweDAO() {
+        return new PraceDyplomoweDAOImpl();
+    }
 }
 

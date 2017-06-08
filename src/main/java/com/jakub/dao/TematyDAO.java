@@ -10,6 +10,19 @@ import java.util.Observable;
  */
 public interface TematyDAO {
 
+    void reserveTopic(int idTematy, int idUser);
+
     List<Tematy> showall();
+
     void add(int idPromotora, String temat);
+
+    List<Tematy> showFreeTopics();
+
+    Boolean itIsAlreadyBooked(int idUser);
+
+    List<Tematy> showallReservation();
+
+    void acceptReservation(int idTematu, int idUser);
+    void rejectReservation(int idTematu);
+
 }

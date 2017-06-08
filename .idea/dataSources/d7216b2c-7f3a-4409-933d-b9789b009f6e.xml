@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="pracedyplomowe@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="pracedyplomowe">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="sys"/>
+    <table id="7" parent="2" name="hibernate_sequence"/>
+    <table id="8" parent="2" name="pracedyplomowe"/>
+    <table id="9" parent="2" name="tematy"/>
+    <table id="10" parent="2" name="users"/>
+    <table id="11" parent="2" name="wiadomosci"/>
+    <routine id="12" parent="2" name="addusers">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="13" parent="2" name="addTopic">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="14" parent="2" name="addMessage">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="15" parent="2" name="deleteMessage">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="16" parent="2" name="reserveTopic">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="17" parent="2" name="acceptReservation">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="18" parent="2" name="rejectReservation">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <column id="19" parent="7" name="next_val">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="20" parent="8" name="idpracy">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="21" parent="8" name="iduzytkownika">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="22" parent="8" name="idtematy">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="23" parent="8" name="praca">
+      <Position>4</Position>
+      <DataType>blob|0</DataType>
+    </column>
+    <column id="24" parent="8" name="status">
+      <Position>5</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <index id="25" parent="8" name="temat_idx">
+      <ColNames>idtematy</ColNames>
+    </index>
+    <index id="26" parent="8" name="user_idx">
+      <ColNames>iduzytkownika</ColNames>
+    </index>
+    <key id="27" parent="8" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idpracy</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="28" parent="8" name="user">
+      <ColNames>iduzytkownika</ColNames>
+      <RefSchemaName>pracedyplomowe</RefSchemaName>
+      <RefTableName>users</RefTableName>
+      <RefColNames>iduser</RefColNames>
+    </foreign-key>
+    <foreign-key id="29" parent="8" name="temat">
+      <ColNames>idtematy</ColNames>
+      <RefSchemaName>pracedyplomowe</RefSchemaName>
+      <RefTableName>tematy</RefTableName>
+      <RefColNames>idtematy</RefColNames>
+    </foreign-key>
+    <column id="30" parent="9" name="idtematy">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="31" parent="9" name="temat">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="32" parent="9" name="idpromotora">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="33" parent="9" name="status">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="34" parent="9" name="iduser">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="35" parent="9" name="promotor_idx">
+      <ColNames>idpromotora</ColNames>
+    </index>
+    <index id="36" parent="9" name="rezerwacja_idx">
+      <ColNames>iduser</ColNames>
+    </index>
+    <key id="37" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idtematy</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="38" parent="9" name="promotor">
+      <ColNames>idpromotora</ColNames>
+      <RefSchemaName>pracedyplomowe</RefSchemaName>
+      <RefTableName>users</RefTableName>
+      <RefColNames>iduser</RefColNames>
+    </foreign-key>
+    <column id="39" parent="10" name="iduser">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="40" parent="10" name="login">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="41" parent="10" name="haslo">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="42" parent="10" name="imie">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="43" parent="10" name="nazwisko">
+      <Position>5</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="44" parent="10" name="rola">
+      <Position>6</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="45" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>iduser</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="46" parent="11" name="idwiadomosci">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="47" parent="11" name="idnadawcy">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="48" parent="11" name="idadresata">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="49" parent="11" name="temat">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="50" parent="11" name="tresc">
+      <Position>5</Position>
+      <DataType>varchar(5000)|0</DataType>
+    </column>
+    <index id="51" parent="11" name="adresat_idx">
+      <ColNames>idadresata</ColNames>
+    </index>
+    <index id="52" parent="11" name="nadawca">
+      <ColNames>idnadawcy</ColNames>
+    </index>
+    <key id="53" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idwiadomosci</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="54" parent="11" name="nadawca">
+      <ColNames>idnadawcy</ColNames>
+      <RefSchemaName>pracedyplomowe</RefSchemaName>
+      <RefTableName>users</RefTableName>
+      <RefColNames>iduser</RefColNames>
+    </foreign-key>
+    <foreign-key id="55" parent="11" name="adresat">
+      <ColNames>idadresata</ColNames>
+      <RefSchemaName>pracedyplomowe</RefSchemaName>
+      <RefTableName>users</RefTableName>
+      <RefColNames>iduser</RefColNames>
+    </foreign-key>
+    <argument id="56" parent="12" name="in_login">
+      <DataType>varchar(45)|0</DataType>
+    </argument>
+    <argument id="57" parent="12" name="in_haslo">
+      <DataType>varchar(45)|0</DataType>
+    </argument>
+    <argument id="58" parent="12" name="in_imie">
+      <DataType>varchar(45)|0</DataType>
+    </argument>
+    <argument id="59" parent="12" name="in_nazwisko">
+      <DataType>varchar(45)|0</DataType>
+    </argument>
+    <argument id="60" parent="12" name="in_rola">
+      <DataType>varchar(45)|0</DataType>
+    </argument>
+    <argument id="61" parent="13" name="in_promotor">
+      <DataType>decimal(10)|0</DataType>
+    </argument>
+    <argument id="62" parent="13" name="in_temat">
+      <DataType>varchar(255)|0</DataType>
+    </argument>
+    <argument id="63" parent="14" name="in_nadawca">
+      <DataType>decimal(10)|0</DataType>
+    </argument>
+    <argument id="64" parent="14" name="in_adresat">
+      <DataType>decimal(10)|0</DataType>
+    </argument>
+    <argument id="65" parent="14" name="in_temat">
+      <DataType>varchar(255)|0</DataType>
+    </argument>
+    <argument id="66" parent="14" name="in_tresc">
+      <DataType>varchar(5000)|0</DataType>
+    </argument>
+    <argument id="67" parent="15" name="in_idwiadomosci">
+      <DataType>decimal(10)|0</DataType>
+    </argument>
+    <argument id="68" parent="16" name="in_idtematu">
+      <DataType>decimal(10)|0</DataType>
+    </argument>
+    <argument id="69" parent="16" name="in_iduser">
+      <DataType>decimal(10)|0</DataType>
+    </argument>
+    <argument id="70" parent="17" name="in_idtematu">
+      <DataType>decimal(10)|0</DataType>
+    </argument>
+    <argument id="71" parent="17" name="in_iduser">
+      <DataType>decimal(10)|0</DataType>
+    </argument>
+    <argument id="72" parent="18" name="in_idtematu">
+      <DataType>decimal(10)|0</DataType>
+    </argument>
+  </database-model>
+</dataSource>
