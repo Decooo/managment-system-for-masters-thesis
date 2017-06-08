@@ -56,7 +56,8 @@
     </column>
     <column id="23" parent="8" name="praca">
       <Position>4</Position>
-      <DataType>blob|0</DataType>
+      <DataType>longblob|0</DataType>
+      <NotNull>1</NotNull>
     </column>
     <column id="24" parent="8" name="status">
       <Position>5</Position>

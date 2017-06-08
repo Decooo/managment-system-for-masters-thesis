@@ -3,6 +3,7 @@ package com.jakub.controller;
 import com.jakub.dao.PraceDyplomoweDAO;
 import com.jakub.dao.TematyDAO;
 import com.jakub.dao.UsersDAO;
+import com.jakub.model.PraceDyplomowe;
 import com.jakub.model.Tematy;
 import com.jakub.model.Users;
 import com.jakub.model.Wiadomosci;
@@ -146,7 +147,8 @@ public class TematyController {
     @RequestMapping(value = "/accept/{idtematy}", method = RequestMethod.GET)
     public ModelAndView accept(Principal principal, @PathVariable("idtematy") int idtematy, RedirectAttributes attributes) {
         ModelAndView model = new ModelAndView("redirect:/tematy/rezerwacje");
-        Users user = usersDAO.findUser(principal.getName());
+        Tematy tematy = tematyDAO.findByID(idtematy);
+        Users user = usersDAO.findUserByID(tematy.getIdUser());
         tematyDAO.acceptReservation(idtematy, user.getIduser());
         attributes.addFlashAttribute("css", "msgSuccess");
         attributes.addFlashAttribute("msg", "Zaakceptowano rezerwacje tematu");
@@ -159,6 +161,24 @@ public class TematyController {
         tematyDAO.rejectReservation(idtematy);
         attributes.addFlashAttribute("css", "msgSuccess");
         attributes.addFlashAttribute("msg", "Odrzucono rezerwacje tematu");
+        return model;
+    }
+
+    @RequestMapping("/mojtemat")
+    public ModelAndView myTopic(Principal principal) {
+        ModelAndView model = new ModelAndView("myTopic");
+        Users user = usersDAO.findUser(principal.getName());
+        PraceDyplomowe dissertation = praceDyplomoweDAO.showMyTopic(user.getIduser());
+        if (dissertation == null) {
+            model.addObject("msg", "Nie masz wybranego tematu pracy dyplomowej");
+
+        }else {
+            model.addObject("dissertation", dissertation);
+            Tematy topic = tematyDAO.findByID(dissertation.getIdtematy());
+            model.addObject("topic",topic);
+            Users user1 = usersDAO.findUserByID(topic.getIdpromotora());
+            model.addObject("users",user1);
+        }
         return model;
     }
 

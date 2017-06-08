@@ -25,4 +25,5 @@ public interface TematyDAO {
     void acceptReservation(int idTematu, int idUser);
     void rejectReservation(int idTematu);
 
+    Tematy findByID(int idTematu);
 }

@@ -9,6 +9,7 @@
         <class>com.jakub.model.Users</class>
         <class>com.jakub.model.Wiadomosci</class>
         <class>com.jakub.model.Tematy</class>
+        <class>com.jakub.model.PraceDyplomowe</class>
 
 
         <properties>

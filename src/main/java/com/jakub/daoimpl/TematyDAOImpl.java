@@ -107,4 +107,13 @@ public class TematyDAOImpl implements TematyDAO {
 
         entityManager.close();
     }
+
+    @Override
+    public Tematy findByID(int idTematu) {
+        EntityManager entityManager = emf.createEntityManager();
+        Tematy temat = (Tematy) entityManager.createNativeQuery("SELECT * FROM tematy WHERE idtematy='" + idTematu + "'", Tematy.class).getSingleResult();
+
+        entityManager.close();
+        return temat;
+    }
 }
