@@ -11,14 +11,17 @@ import com.jakub.validator.TematyValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.security.Principal;
 import java.util.ArrayList;
@@ -65,6 +68,27 @@ public class TematyController {
         for (Tematy t : topics) {
             users.add(usersDAO.findUserByID(t.getIdpromotora()));
         }
+        model.addObject("users", users);
+        return model;
+    }
+
+    @RequestMapping("/listaprac")
+    public ModelAndView dissertationList() {
+        ModelAndView model = new ModelAndView("DissertationList");
+        List<PraceDyplomowe> topics = praceDyplomoweDAO.showall();
+        model.addObject("topics", topics);
+        List<Users> users = new ArrayList<Users>();
+        List<Tematy> top = new ArrayList<Tematy>();
+
+
+        for (PraceDyplomowe t : topics) {
+            users.add(usersDAO.findUserByID(t.getIduzytkownika()));
+        }
+        for (PraceDyplomowe t : topics) {
+            top.add(tematyDAO.findByID(t.getIdtematy()));
+
+        }
+        model.addObject("tops", top);
         model.addObject("users", users);
         return model;
     }
@@ -181,12 +205,12 @@ public class TematyController {
         if (dissertation == null) {
             model.addObject("msg", "Nie masz wybranego tematu pracy dyplomowej");
 
-        }else {
+        } else {
             model.addObject("dissertation", dissertation);
             Tematy topic = tematyDAO.findByID(dissertation.getIdtematy());
-            model.addObject("topic",topic);
+            model.addObject("topic", topic);
             Users user1 = usersDAO.findUserByID(topic.getIdpromotora());
-            model.addObject("users",user1);
+            model.addObject("users", user1);
         }
         return model;
     }
@@ -195,9 +219,44 @@ public class TematyController {
     public ModelAndView delete(@PathVariable("idtematy") int idtematy, RedirectAttributes attributes) {
         ModelAndView model = new ModelAndView("redirect:/tematy/mojetematy");
         tematyDAO.delete(idtematy);
-        attributes.addFlashAttribute("css","msgSuccess");
+        attributes.addFlashAttribute("css", "msgSuccess");
         attributes.addFlashAttribute("msg", "Usunieto temat pracy dyplomowej");
         return model;
+    }
+
+
+    @RequestMapping(value = "add", method = RequestMethod.POST)
+    public ModelAndView save(Principal principal, HttpServletRequest request, ModelAndView m, @ModelAttribute("file") MultipartFile file) throws IOException {
+        ModelAndView model = new ModelAndView("redirect:/tematy/mojtemat");
+        Users user = usersDAO.findUser(principal.getName());
+        byte[] pdfBytes = readBytesFromFile(file);
+
+        praceDyplomoweDAO.addDissertation(pdfBytes, user.getIduser());
+        model.addObject("css", "msgSuccess");
+        model.addObject("msg", "Zaaktualizowano prace!");
+
+        return model;
+
+    }
+
+    private static byte[] readBytesFromFile(MultipartFile filePath) throws IOException {
+        byte[] pdf = filePath.getBytes();
+
+        return pdf;
+    }
+
+    @RequestMapping(value = {"/download/{idtematy}"}, method = RequestMethod.GET)
+    public void download(@PathVariable("idtematy") String idtematy ,HttpServletRequest request, HttpServletResponse response, Model model,
+                             Principal principal) throws IOException {
+        PraceDyplomowe praceDyplomowe = null;
+        if (idtematy != null) {
+            praceDyplomowe = this.praceDyplomoweDAO.findDissertation(idtematy);
+        }
+        if (praceDyplomowe!= null && praceDyplomowe.getPraca() != null) {
+            response.setContentType("application/pdf");
+            response.getOutputStream().write(praceDyplomowe.getPraca());
+        }
+        response.getOutputStream().close();
     }
 
 }

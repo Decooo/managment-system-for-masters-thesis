@@ -13,7 +13,7 @@ public class PraceDyplomowe {
     private int idpracy;
     private int iduzytkownika;
     private int idtematy;
-    private byte praca;
+    private byte[] praca;
     private String status;
 
     @Override
@@ -51,11 +51,11 @@ public class PraceDyplomowe {
         this.idtematy = idtematy;
     }
 
-    public byte getPraca() {
+    public byte[] getPraca() {
         return praca;
     }
 
-    public void setPraca(byte praca) {
+    public void setPraca(byte[] praca) {
         this.praca = praca;
     }
 

@@ -33,5 +33,8 @@
     <security:authorize access="hasAnyRole('ROLE_administrator','ROLE_promotor')">
         <a href="${pageContext.request.contextPath}/tematy/nowy">Dodaj temat</a>
     </security:authorize>
+    <security:authorize access="hasAnyRole('ROLE_administrator','ROLE_student','ROLE_promotor')">
+        <a href="${pageContext.request.contextPath}/tematy/listaprac">Prace</a>
+    </security:authorize>
 
 </div>

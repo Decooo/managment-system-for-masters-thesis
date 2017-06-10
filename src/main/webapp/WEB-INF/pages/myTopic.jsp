@@ -24,15 +24,24 @@
     <c:choose>
         <c:when test="${not empty msg}">
             Nie masz wybranego tematu pracy dyplomowej
-            <br />
+            <br/>
         </c:when>
         <c:otherwise>
             Temat: ${topic.temat}<br/>
             Promotor: ${users.imie} ${users.nazwisko}<br/>
             Status: ${dissertation.status}<br/>
+            <input type="submit" value="Pobierz prace" onclick="location.href='download/${topic.idtematy}';"/>
+
+            <br/><br/>
+            <form:form commandName="dissertation" action="add" method="POST" enctype="multipart/form-data">
+
+                Praca: <input type="file" name="file"/><br/>
+
+                <form:button>Edytuj prace</form:button>
+            </form:form>
+
         </c:otherwise>
     </c:choose>
-
 
 
 </div>
