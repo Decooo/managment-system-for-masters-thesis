@@ -12,9 +12,16 @@
 <jsp:include page="_header.jsp"/>
 <jsp:include page="_menu.jsp"/>
 <div class="main">
-    <h2>System zarządzania pracami dyplomowymi</h2>
+    <h2>Witaj w systemie do zarzadzania pracami dyplomowymi!</h2>
+    <img src="${pageContext.request.contextPath}/img/pracedyplomowe.jpg" align="center">
 
-    Witaj w systemie do zarzadzania pracami dyplomowymi!
+    <p align="center"><font size="4">
+    System zarządzania pracami dyplomowymi oferuje funkcjonalność wystarczającą do osiągnięcia<br/>
+    podstawowego celu, jakim było uporządkowanie procesu zbierania ofert tematów prac<br/>
+    dyplomowych od pracowników naukowo-dydaktycznych i wspomaganie „zapisywania” się<br/>
+    studentów na poszczególne prace. System umożliwia współpracę promotorów prac oraz studentów.<br/>
+    W wyniku działania systemu powstała strona internetowa zawierająca wykaz wszystkich tematów prac<br/>
+    dyplomowych, oraz wykaz gotowych prac.</font></p>
 
 </div>
 <jsp:include page="_footer.jsp"/>

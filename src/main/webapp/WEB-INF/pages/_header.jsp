@@ -10,7 +10,10 @@
 
 <div class="header-container">
 
-    <div class="site-name">System zarządzania pracami dyplomowymi</div>
+
+    <div class="site-name">
+        <img src="${pageContext.request.contextPath}/img/logoUR.png" align="left" width="400" height="45">
+        System zarządzania pracami dyplomowymi</div>
 
     <div class="header-bar">
         <c:if test="${pageContext.request.userPrincipal.name != null}">

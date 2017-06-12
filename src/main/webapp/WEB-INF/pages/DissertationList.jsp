@@ -34,7 +34,7 @@
                 <td><list:forEach begin="${loop.index}" step="1" end="${loop.index}" var="top"
                                   items="${tops}">${top.temat}</list:forEach></td>
                 <td>${topic.status}</td>
-                <td><input type="submit" value="Pobierz prace" onclick="location.href='download/${topic.idtematy}';"/></td>
+                <td><input type="submit" value="Pokaż prace" onclick="location.href='download/${topic.idtematy}';"/></td>
             </tr>
         </list:forEach>
     </table>

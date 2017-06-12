@@ -26,20 +26,20 @@
             Nie masz wybranego tematu pracy dyplomowej
             <br/>
         </c:when>
-        <c:otherwise>
-            Temat: ${topic.temat}<br/>
-            Promotor: ${users.imie} ${users.nazwisko}<br/>
-            Status: ${dissertation.status}<br/>
-            <input type="submit" value="Pobierz prace" onclick="location.href='download/${topic.idtematy}';"/>
+        <c:otherwise><font size="4">
+            Temat: <b>${topic.temat}</b><br/>
+            Promotor: <b>${users.imie} ${users.nazwisko}</b><br/>
+            Status: <b>${dissertation.status}</b><br/><br/>
+            <input type="submit" value="Pokaż prace" onclick="location.href='download/${topic.idtematy}';"/>
 
             <br/><br/>
             <form:form commandName="dissertation" action="add" method="POST" enctype="multipart/form-data">
 
-                Praca: <input type="file" name="file"/><br/>
+                Praca: <input type="file" name="file"/><br/><br/>
 
                 <form:button>Edytuj prace</form:button>
             </form:form>
-
+        </font>
         </c:otherwise>
     </c:choose>
 

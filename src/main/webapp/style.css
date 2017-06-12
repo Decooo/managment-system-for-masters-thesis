@@ -9,6 +9,10 @@
     text-align: right;
 }
 
+.site-name{
+    margin: 3px;
+}
+
 .menu{
     text-align: right;
     background-color: lightgray;

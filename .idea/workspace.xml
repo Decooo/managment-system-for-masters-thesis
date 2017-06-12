@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="906ff470-e707-4c19-9e1b-2944f9a7077c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/DissertationList.jsp" />
+    <list default="true" id="906ff470-e707-4c19-9e1b-2944f9a7077c" name="Default" comment="list dissertation">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Instrukcja importowania oraz uruchamiania projektu maven w Intellij Idea.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/System zarzadzania pracami dyplomowymi - Dokumentacja.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/System zarzadzania pracami dyplomowymi - Dokumentacja.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/logoUR.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/logoUR.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/pracedyplomowe.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pracedyplomowe.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/d7216b2c-7f3a-4409-933d-b9789b009f6e/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/d7216b2c-7f3a-4409-933d-b9789b009f6e/_metadata_/metadata" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/d7216b2c-7f3a-4409-933d-b9789b009f6e/_metadata_/metadata.keystream" afterPath="$PROJECT_DIR$/.idea/dataSources/d7216b2c-7f3a-4409-933d-b9789b009f6e/_metadata_/metadata.keystream" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/d7216b2c-7f3a-4409-933d-b9789b009f6e/_metadata_/metadata.keystream.len" afterPath="$PROJECT_DIR$/.idea/dataSources/d7216b2c-7f3a-4409-933d-b9789b009f6e/_metadata_/metadata.keystream.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/d7216b2c-7f3a-4409-933d-b9789b009f6e/_metadata_/metadata.len" afterPath="$PROJECT_DIR$/.idea/dataSources/d7216b2c-7f3a-4409-933d-b9789b009f6e/_metadata_/metadata.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/d7216b2c-7f3a-4409-933d-b9789b009f6e/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/d7216b2c-7f3a-4409-933d-b9789b009f6e/_metadata_/metadata.values.at" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/d7216b2c-7f3a-4409-933d-b9789b009f6e/_metadata_/metadata_i" afterPath="$PROJECT_DIR$/.idea/dataSources/d7216b2c-7f3a-4409-933d-b9789b009f6e/_metadata_/metadata_i" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/d7216b2c-7f3a-4409-933d-b9789b009f6e/_src_/schema/pracedyplomowe.zip" afterPath="$PROJECT_DIR$/.idea/dataSources/d7216b2c-7f3a-4409-933d-b9789b009f6e/_src_/schema/pracedyplomowe.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/d7216b2c-7f3a-4409-933d-b9789b009f6e.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/d7216b2c-7f3a-4409-933d-b9789b009f6e.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jakub/controller/TematyController.java" afterPath="$PROJECT_DIR$/src/main/java/com/jakub/controller/TematyController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jakub/dao/PraceDyplomoweDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/jakub/dao/PraceDyplomoweDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jakub/daoimpl/PraceDyplomoweDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jakub/daoimpl/PraceDyplomoweDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jakub/model/PraceDyplomowe.java" afterPath="$PROJECT_DIR$/src/main/java/com/jakub/model/PraceDyplomowe.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/DissertationList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/DissertationList.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/_header.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/_header.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/_menu.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/_menu.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/myTopic.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/myTopic.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -109,8 +113,8 @@
       <file leaf-file-name="TematyDAOImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jakub/daoimpl/TematyDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="41" column="4" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="48" selection-end-column="5" />
+            <state relative-caret-position="527">
+              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
               <folding>
                 <marker date="1496963770036" expanded="true" signature="1549:1569" ph="SELECT * FRO... tematy" />
                 <marker date="1496963770036" expanded="true" signature="2422:2463" ph="SELECT * FRO... tematy" />
@@ -128,65 +132,91 @@
       <file leaf-file-name="TematyController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jakub/controller/TematyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="90" column="29" lean-forward="false" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="29" />
-              <folding>
-                <element signature="e#2057#2064#0" expanded="true" />
-                <element signature="e#2546#2553#0" expanded="true" />
-                <element signature="e#2597#2605#0" expanded="true" />
-                <element signature="e#3591#3598#0" expanded="true" />
-                <element signature="e#6274#6281#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="443">
+              <caret line="116" column="5" lean-forward="true" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DissertationList.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DATABASE/d7216b2c-7f3a-4409-933d-b9789b009f6e.SCHEMA:pracedyplomowe" pinned="false" current-in-tab="true">
+        <entry file="uml://DATABASE/d7216b2c-7f3a-4409-933d-b9789b009f6e.SCHEMA:pracedyplomowe">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>DATABASE</ID>
+              <OriginalElement>d7216b2c-7f3a-4409-933d-b9789b009f6e.SCHEMA:pracedyplomowe</OriginalElement>
+              <nodes>
+                <node x="240.0" y="212.0">d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.wiadomosci</node>
+                <node x="0.0" y="212.0">d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.tematy</node>
+                <node x="250.5" y="0.0">d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.users</node>
+                <node x="0.0" y="587.0">d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.hibernate_sequence</node>
+                <node x="209.7" y="402.0">d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.pracedyplomowe</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.pracedyplomowe" target="d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.users">
+                  <point x="52.5" y="-70.0" />
+                  <point x="367.2" y="377.0" />
+                  <point x="495.5" y="377.0" />
+                  <point x="495.5" y="187.0" />
+                  <point x="446.5" y="187.0" />
+                  <point x="84.0" y="81.0" />
+                </edge>
+                <edge source="d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.wiadomosci" target="d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.users">
+                  <point x="61.25" y="-70.0" />
+                  <point x="423.75" y="187.0" />
+                  <point x="390.5" y="187.0" />
+                  <point x="28.0" y="81.0" />
+                </edge>
+                <edge source="d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.tematy" target="d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.users">
+                  <point x="0.0" y="-70.0" />
+                  <point x="110.0" y="187.0" />
+                  <point x="278.5" y="187.0" />
+                  <point x="-84.0" y="81.0" />
+                </edge>
+                <edge source="d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.pracedyplomowe" target="d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.tematy">
+                  <point x="-52.5" y="-70.0" />
+                  <point x="262.2" y="377.0" />
+                  <point x="110.0" y="377.0" />
+                  <point x="0.0" y="70.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.9422492401215805" x="495.47903225806454" y="579.0" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Key columns</Category>
+                <Category>Columns</Category>
+              </Categories>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listMyTopics.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/listMyTopics.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="43" column="6" lean-forward="true" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TematyValidator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jakub/validator/TematyValidator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DissertationList.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/DissertationList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="349">
+              <caret line="36" column="59" lean-forward="false" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pracedyplomowe.pracedyplomowe" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/76488743/d7216b2c-7f3a-4409-933d-b9789b009f6e/pracedyplomowe.pracedyplomowe">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PraceDyplomoweDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jakub/dao/PraceDyplomoweDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UsersDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jakub/daoimpl/UsersDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="39" selection-end-column="20" />
-              <folding>
-                <marker date="1496753091331" expanded="true" signature="662:709" ph="SELECT * FRO... users" />
-                <marker date="1496753091331" expanded="true" signature="1095:1140" ph="SELECT * FRO... users" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -194,25 +224,39 @@
       <file leaf-file-name="_menu.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/_menu.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="36" column="58" lean-forward="false" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+            <state relative-caret-position="493">
+              <caret line="35" column="79" lean-forward="false" selection-start-line="35" selection-start-column="79" selection-end-line="35" selection-end-column="79" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PraceDyplomoweDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jakub/daoimpl/PraceDyplomoweDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="71" column="21" lean-forward="true" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1497111083847" expanded="true" signature="628:693" ph="SELECT * FRO... pracedyplomowe" />
-                <marker date="1497111083847" expanded="true" signature="1228:1293" ph="SELECT * FRO... pracedyplomowe" />
-                <marker date="1497111083847" expanded="true" signature="2311:2373" ph="SELECT * FRO... pracedyplomowe" />
-                <marker date="1497111083847" expanded="true" signature="2703:2731" ph="SELECT * FRO... pracedyplomowe" />
-              </folding>
+      <file leaf-file-name="pracedyplomowe.tematy" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/76488743/d7216b2c-7f3a-4409-933d-b9789b009f6e/pracedyplomowe.tematy">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pracedyplomowe.users" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/76488743/d7216b2c-7f3a-4409-933d-b9789b009f6e/pracedyplomowe.users">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -220,18 +264,8 @@
       <file leaf-file-name="myTopic.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/myTopic.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="32" column="110" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="110" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="topicList.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/topicList.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="36" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state relative-caret-position="281">
+              <caret line="37" column="65" lean-forward="false" selection-start-line="37" selection-start-column="65" selection-end-line="37" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -271,12 +305,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jakub/dao/TematyDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jakub/daoimpl/TematyDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jakub/model/PraceDyplomowe.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/myTopic.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/_menu.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/jakub/dao/PraceDyplomoweDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jakub/daoimpl/PraceDyplomoweDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jakub/controller/TematyController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jakub/config/WebMvcConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/_header.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/style.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/DissertationList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/myTopic.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/_menu.jsp" />
       </list>
     </option>
   </component>
@@ -329,8 +367,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -452,6 +490,62 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ManagmentSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="managment-system-for-masters-thesis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ManagmentSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="managment-system-for-masters-thesis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -476,6 +570,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="jakub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="validator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -626,6 +724,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ManagmentSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="managment-system-for-masters-thesis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jakub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authentication" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1158,7 +1286,8 @@
       <updated>1496753511164</updated>
       <workItem from="1496753518313" duration="6400000" />
       <workItem from="1496939550570" duration="20174000" />
-      <workItem from="1497103467760" duration="6849000" />
+      <workItem from="1497103467760" duration="6902000" />
+      <workItem from="1497263800726" duration="11426000" />
     </task>
     <task id="LOCAL-00001" summary="reservation of topics">
       <created>1496957074045</created>
@@ -1181,11 +1310,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496964066137</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="list dissertation">
+      <created>1497111313437</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1497111313437</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33423000" />
+    <option name="totallyTimeSpent" value="44902000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1198,7 +1334,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1208,7 +1343,7 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2185501" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44857767" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1223,7 +1358,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27193934" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2112676" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18123667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18283582" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1280,7 +1415,8 @@
     <MESSAGE value="reservation of topics" />
     <MESSAGE value="my topic" />
     <MESSAGE value="list of topics the promoter + delete topics" />
-    <option name="LAST_COMMIT_MESSAGE" value="list of topics the promoter + delete topics" />
+    <MESSAGE value="list dissertation" />
+    <option name="LAST_COMMIT_MESSAGE" value="list dissertation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1291,60 +1427,15 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jakub/daoimpl/TematyDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <marker date="1496963770036" expanded="true" signature="1549:1569" ph="SELECT * FRO... tematy" />
-            <marker date="1496963770036" expanded="true" signature="2422:2463" ph="SELECT * FRO... tematy" />
-            <marker date="1496963770036" expanded="true" signature="2768:2788" ph="SELECT * FRO... tematy" />
-            <marker date="1496963770036" expanded="true" signature="2768:2818" ph="SELECT * FRO... tematy" />
-            <marker date="1496963770036" expanded="true" signature="3285:3334" ph="SELECT * FRO... tematy" />
-            <marker date="1496963770036" expanded="true" signature="4629:4683" ph="SELECT * FRO... tematy" />
-            <marker date="1496963770036" expanded="true" signature="4990:5030" ph="SELECT * FRO... tematy" />
-            <marker date="1496963770036" expanded="true" signature="4990:5045" ph="SELECT * FRO... tematy" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d7216b2c-7f3a-4409-933d-b9789b009f6e/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/76488743/d7216b2c-7f3a-4409-933d-b9789b009f6e/pracedyplomowe.users">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/76488743/d7216b2c-7f3a-4409-933d-b9789b009f6e/pracedyplomowe.tematy">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1359,7 +1450,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1367,11 +1457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="37" column="13" lean-forward="true" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1496753091332" expanded="true" signature="712:766" ph="SELECT * FRO... wiadomosci" />
-            <marker date="1496753091332" expanded="true" signature="1085:1138" ph="SELECT * FRO... wiadomosci" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1463,14 +1548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-58">
           <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1511,18 +1588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/76488743/d7216b2c-7f3a-4409-933d-b9789b009f6e/pracedyplomowe.tematy">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/reservation.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -1539,19 +1604,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/76488743/d7216b2c-7f3a-4409-933d-b9789b009f6e/pracedyplomowe.users">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/registration.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1560,19 +1612,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/listMyTopics.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="11" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jakub/dao/TematyDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1580,17 +1623,81 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
           <caret line="52" column="30" lean-forward="false" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jakub/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jakub/model/PraceDyplomowe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/newMessage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="31" column="79" lean-forward="true" selection-start-line="31" selection-start-column="79" selection-end-line="31" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/listFreeThemes.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="39" column="110" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jakub/daoimpl/UsersDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="39" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="false" />
-            <marker date="1496753091332" expanded="true" signature="712:766" ph="SELECT * FRO... wiadomosci" />
-            <marker date="1496753091332" expanded="true" signature="1085:1138" ph="SELECT * FRO... wiadomosci" />
+            <marker date="1496753091331" expanded="true" signature="662:709" ph="SELECT * FRO... users" />
+            <marker date="1496753091331" expanded="true" signature="1095:1140" ph="SELECT * FRO... users" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jakub/daoimpl/PraceDyplomoweDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="71" column="21" lean-forward="false" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+          <folding>
+            <marker date="1497111083847" expanded="true" signature="628:693" ph="SELECT * FRO... pracedyplomowe" />
+            <marker date="1497111083847" expanded="true" signature="1228:1293" ph="SELECT * FRO... pracedyplomowe" />
+            <marker date="1497111083847" expanded="true" signature="2311:2373" ph="SELECT * FRO... pracedyplomowe" />
+            <marker date="1497111083847" expanded="true" signature="2703:2731" ph="SELECT * FRO... pracedyplomowe" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/76488743/d7216b2c-7f3a-4409-933d-b9789b009f6e/pracedyplomowe.pracedyplomowe">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jakub/config/ApplicationContextConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
+        <state relative-caret-position="451">
           <caret line="124" column="30" lean-forward="false" selection-start-line="124" selection-start-column="30" selection-end-line="124" selection-end-column="30" />
           <folding />
         </state>
@@ -1612,42 +1719,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jakub/config/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jakub/config/WebMvcConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        <state relative-caret-position="459">
+          <caret line="38" column="38" lean-forward="false" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jakub/model/PraceDyplomowe.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jakub/dao/PraceDyplomoweDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state relative-caret-position="272">
+          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/newMessage.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/_header.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="31" column="79" lean-forward="true" selection-start-line="31" selection-start-column="79" selection-end-line="31" selection-end-column="79" />
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/listFreeThemes.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="39" column="110" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="110" />
+        <state relative-caret-position="289">
+          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -1655,34 +1764,65 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/topicList.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" column="36" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <caret line="20" column="36" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jakub/daoimpl/UsersDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/DissertationList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="39" selection-end-column="20" />
-          <folding>
-            <marker date="1496753091331" expanded="true" signature="662:709" ph="SELECT * FRO... users" />
-            <marker date="1496753091331" expanded="true" signature="1095:1140" ph="SELECT * FRO... users" />
-          </folding>
+        <state relative-caret-position="349">
+          <caret line="36" column="59" lean-forward="false" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/myTopic.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="32" column="110" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="110" />
+        <state relative-caret-position="281">
+          <caret line="37" column="65" lean-forward="false" selection-start-line="37" selection-start-column="65" selection-end-line="37" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/_menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="35" column="79" lean-forward="false" selection-start-line="35" selection-start-column="79" selection-end-line="35" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/76488743/d7216b2c-7f3a-4409-933d-b9789b009f6e/pracedyplomowe.tematy">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/76488743/d7216b2c-7f3a-4409-933d-b9789b009f6e/pracedyplomowe.users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jakub/daoimpl/TematyDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="41" column="4" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="48" selection-end-column="5" />
+        <state relative-caret-position="527">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding>
             <marker date="1496963770036" expanded="true" signature="1549:1569" ph="SELECT * FRO... tematy" />
             <marker date="1496963770036" expanded="true" signature="2422:2463" ph="SELECT * FRO... tematy" />
@@ -1696,70 +1836,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jakub/daoimpl/PraceDyplomoweDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/listMyTopics.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="71" column="21" lean-forward="true" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1497111083847" expanded="true" signature="628:693" ph="SELECT * FRO... pracedyplomowe" />
-            <marker date="1497111083847" expanded="true" signature="1228:1293" ph="SELECT * FRO... pracedyplomowe" />
-            <marker date="1497111083847" expanded="true" signature="2311:2373" ph="SELECT * FRO... pracedyplomowe" />
-            <marker date="1497111083847" expanded="true" signature="2703:2731" ph="SELECT * FRO... pracedyplomowe" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/_menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="36" column="58" lean-forward="false" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+        <state relative-caret-position="434">
+          <caret line="43" column="6" lean-forward="true" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/76488743/d7216b2c-7f3a-4409-933d-b9789b009f6e/pracedyplomowe.pracedyplomowe">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jakub/dao/PraceDyplomoweDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jakub/validator/TematyValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jakub/controller/TematyController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="90" column="29" lean-forward="false" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="29" />
-          <folding>
-            <element signature="e#2057#2064#0" expanded="true" />
-            <element signature="e#2546#2553#0" expanded="true" />
-            <element signature="e#2597#2605#0" expanded="true" />
-            <element signature="e#3591#3598#0" expanded="true" />
-            <element signature="e#6274#6281#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="443">
+          <caret line="116" column="5" lean-forward="true" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/DissertationList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
+    <entry file="uml://DATABASE/d7216b2c-7f3a-4409-933d-b9789b009f6e.SCHEMA:pracedyplomowe">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>d7216b2c-7f3a-4409-933d-b9789b009f6e.SCHEMA:pracedyplomowe</OriginalElement>
+          <nodes>
+            <node x="240.0" y="212.0">d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.wiadomosci</node>
+            <node x="0.0" y="212.0">d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.tematy</node>
+            <node x="250.5" y="0.0">d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.users</node>
+            <node x="0.0" y="587.0">d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.hibernate_sequence</node>
+            <node x="209.7" y="402.0">d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.pracedyplomowe</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.pracedyplomowe" target="d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.users">
+              <point x="52.5" y="-70.0" />
+              <point x="367.2" y="377.0" />
+              <point x="495.5" y="377.0" />
+              <point x="495.5" y="187.0" />
+              <point x="446.5" y="187.0" />
+              <point x="84.0" y="81.0" />
+            </edge>
+            <edge source="d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.wiadomosci" target="d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.users">
+              <point x="61.25" y="-70.0" />
+              <point x="423.75" y="187.0" />
+              <point x="390.5" y="187.0" />
+              <point x="28.0" y="81.0" />
+            </edge>
+            <edge source="d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.tematy" target="d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.users">
+              <point x="0.0" y="-70.0" />
+              <point x="110.0" y="187.0" />
+              <point x="278.5" y="187.0" />
+              <point x="-84.0" y="81.0" />
+            </edge>
+            <edge source="d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.pracedyplomowe" target="d7216b2c-7f3a-4409-933d-b9789b009f6e.TABLE:pracedyplomowe.tematy">
+              <point x="-52.5" y="-70.0" />
+              <point x="262.2" y="377.0" />
+              <point x="110.0" y="377.0" />
+              <point x="0.0" y="70.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.9422492401215805" x="495.47903225806454" y="579.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
         </state>
       </provider>
     </entry>
